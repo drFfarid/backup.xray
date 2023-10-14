@@ -27,7 +27,7 @@ done
 
 # Caption
 # گرفتن عنوان برای فایل پشتیبان و ذخیره آن در متغیر caption
-echo "Caption (for example, your domain, to identify the database file more easily): "
+echo "Caption (for example, your domain): "
 read -r caption
 
 # Cronjob
@@ -48,7 +48,7 @@ while true; do
         cron_time="*/${minute} */${hour} * * *"
         break
     else
-        echo "Invalid input, please enter a valid cronjob format (minutes and hours, e.g: 0 6 or 30 12)"
+        echo "Invalid input, please enter a valid cronjob format (minutes and hours, e.g: 0 1 or 30 2)"
     fi
 done
 
