@@ -4,7 +4,7 @@
 # گرفتن توکن ربات از کاربر و ذخیره آن در متغیر tk
 while [[ -z "$tk" ]]; do
     echo "Bot token: "
-    read -r token
+    read -r tk
     if [[ $tk == $'\0' ]]; then
         echo "Invalid input. Token cannot be empty."
         unset tk
